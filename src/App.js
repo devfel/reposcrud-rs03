@@ -26,7 +26,18 @@ function App() {
   }
 
   async function handleRemoveRepository(id) {
-    // TODO
+    await api.delete(`repositories/${id}`);
+
+    // FORMA 1 - USANDO SPLICE
+    // const newArray = [...repositories];
+    // newArray.splice(
+    //   repositories.findIndex((rep) => rep.id === id),
+    //   1
+    // );
+    // setRepositories(newArray);
+
+    // FORMA 2 - USANDO FILTER
+    setRepositories(repositories.filter((rep) => rep.id !== id));
   }
 
   return (
