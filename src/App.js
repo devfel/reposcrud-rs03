@@ -13,8 +13,16 @@ function App() {
     });
   }, []);
 
+  //ADD element to the backend.
   async function handleAddRepository() {
-    // TODO
+    const response = await api.post("repositories", {
+      title: `Title-${Date.now()}`,
+      url: "urlTest",
+      techs: ["tech1", "thec2", "tech3"],
+    });
+
+    const repository = response.data;
+    setRepositories([...repositories, repository]);
   }
 
   async function handleRemoveRepository(id) {
