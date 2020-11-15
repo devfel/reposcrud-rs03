@@ -1,5 +1,4 @@
 # reposcrud-rs03
-Store repositories of my portfolio to allow CRUD and Likes - ChallengeRS-02
 
 <h3 align="center">
   RS Challenge 3: ReactJS Concepts
@@ -7,6 +6,11 @@ Store repositories of my portfolio to allow CRUD and Likes - ChallengeRS-02
 
 ## :rocket: About the Challenge
 
-In this challenge was created an application to practice ReactJS!
+In this challenge an application was created to practice ReactJS!
 
 I continued to develop the application that stored my portfolio repositories, which I already developed the backend in the last challenge using Node.js.
+
+This time the following functionalities were added:
+  Front-End to list all the repositories registered in my node API.
+  Front-End to add a repositiories to the backend API.
+  Front-End to remove a repositiories to the backend API.
